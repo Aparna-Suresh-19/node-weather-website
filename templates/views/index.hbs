@@ -1,0 +1,28 @@
+{{!-- delete index.html in public(static page) instead of that we use this for dynamic pages --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h3>{{description}}</h3>
+        <form>
+            <input type="text" placeholder="Enter location">
+            <button>Search</button>
+        </form>
+        <p id="msgOne"></p>
+        <p id="msgTwo"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
